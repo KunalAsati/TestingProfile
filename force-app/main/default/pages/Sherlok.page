@@ -1,0 +1,64 @@
+<apex:page showHeader="false" sidebar="false" >
+    
+    <apex:pageBlock title="Bhagwan Details">
+    
+        <apex:pageBlockSection title="Name">
+            <apex:pageBlockSectionItem >
+                Ganesh
+            </apex:pageBlockSectionItem>
+        </apex:pageBlockSection>
+        
+        <apex:pageBlockSection title="Father">
+            <apex:pageBlockSectionItem >
+                Shiv
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                Mahadev
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                Gaurishankar
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                Maheshwar
+            </apex:pageBlockSectionItem>
+        </apex:pageBlockSection>
+        
+        <apex:pageBlockSection title="Mother">
+            <apex:pageBlockSectionItem >
+                Parvati
+            </apex:pageBlockSectionItem>
+        </apex:pageBlockSection>
+    
+    </apex:pageBlock>
+    
+    <apex:pageBlock title="Icchaa Likhiye">
+        <apex:form >
+            <apex:pageBlock >
+                <apex:pageBlockSection title="Name">
+                
+                    <apex:inputText id="name"/>
+                </apex:pageBlockSection>
+                
+                <apex:pageBlockSection title="Address">
+                
+                    <apex:inputTextArea id="addr"/>
+                </apex:pageBlockSection>
+                
+                <apex:pageBlockSection title="ICCHAA">
+                
+                    <apex:inputTextarea id="icchaa"/>
+                    
+                </apex:pageBlockSection>
+                
+                <br/>
+                <apex:inputCheckbox id="tnc" /><apex:outputLink value="https://hindi.dadabhagwan.org/terms-of-use/">Terms and condition apply</apex:outputLink>  
+               
+               
+               <apex:pageBlockButtons location="bottom">
+                   <apex:commandButton value="JAMA KARE" />
+               </apex:pageBlockButtons>
+            </apex:pageBlock>
+        </apex:form>
+        
+    </apex:pageBlock>
+</apex:page>

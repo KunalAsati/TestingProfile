@@ -1,0 +1,54 @@
+<template>
+    
+    <div class="container">
+        <div class="slds-grid slds-gutters slds-wrap justify-center">
+
+            <template for:each={result} for:item="item">
+
+                <div class="card" key={item.id}>
+
+                    <img class="card-image" src={item.urlToImage}>
+                    <div class="card-text">
+
+                        <span class="date">{item.date}</span>
+                        <h2>{item.title}</h2>
+
+                    </div>
+                    <div class="card-stats" onclick={showModel} data-item={item.id}>Read More</div>
+                </div>
+
+            </template>
+
+        </div>
+    </div>
+
+    <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01" class={modalClass}>
+        <div class="slds-modal__container">
+          <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={closeModel}>
+                <lightning-icon icon-name="utility:close" alternative-text="Close Modal" variant="inverse" size="small">
+
+                </lightning-icon>
+          </button>
+          <div class="slds-modal__header">
+            <h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate" tabindex="-1">{title}</h1>
+          </div>
+          <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+            
+            <img src={selectedNews.urlToImage}/>
+            <div>
+                <div>Source - {selectedNews.name} </div>
+                <div> {selectedNews.date}</div>
+            </div>
+            <p class="content">
+            {selectedNews.content}... <a href={selectedNews.url} target="_blank">Go to source</a>
+            </p>
+            <template if:true={selectedNews.author}> I
+                <div class="footer">
+                    <div>Author - {selectedNews.author}</div>
+                </div>
+            </template>
+            </div>
+        </div>
+      </section>
+      <div class={modalDropClass} role="presentation"></div>
+</template>

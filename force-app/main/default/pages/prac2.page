@@ -1,0 +1,10 @@
+<apex:page >
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations</h1>
+  This is your new Page: practice2
+  <apex:pageMessage severity="confirm" strength="0" summary="Confirmation"></apex:pageMessage>
+  <apex:pageMessage severity="info" strength="1" summary="Go to information"></apex:pageMessage>
+  <apex:pageMessage severity="error" strength="2" summary="this is error"></apex:pageMessage>
+  <apex:pageMessage severity="warning" strength="3" summary="this is warning"></apex:pageMessage>
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

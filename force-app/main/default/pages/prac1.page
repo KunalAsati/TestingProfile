@@ -1,0 +1,17 @@
+<apex:page >
+<apex:pageBlock title="block1">
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1 style="color:red">Congratulations</h1>
+this is block1
+<apex:pageBlockSection >this is section 1<apex:pageBlockSectionItem >this is item1</apex:pageBlockSectionItem>
+<apex:pageBlockSectionItem >this is item2</apex:pageBlockSectionItem></apex:pageBlockSection>
+
+<apex:pageBlockSection >this is section 2</apex:pageBlockSection>
+<apex:pageBlockSection >this is section 3</apex:pageBlockSection>
+  <b>htt</b>
+  <!-- End Default Content REMOVE THIS -->
+</apex:pageBlock>
+<apex:pageBlock title="block2">
+<h2 style="color:blue">this is block 2</h2>
+</apex:pageBlock>
+</apex:page>

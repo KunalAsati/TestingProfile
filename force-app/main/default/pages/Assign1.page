@@ -1,0 +1,22 @@
+<apex:page showHeader="false" Controller="AssignClass">
+
+     <apex:tabPanel switchType="client">
+         <apex:tab label="Accounts" name="Home1" id="tabOne"  > Welcome to Accounts
+            <apex:repeat value="{! accnt}" var="a"> 
+                    First Name {! a.Name } 
+                   || Account Number {! a.AccountNumber} 
+                    
+                    <br/>
+            </apex:repeat>
+         </apex:tab>
+         
+         <apex:tab label="Contacts" name="students1" id="tabtwo"> Welcome to Contacts
+             <apex:repeat value="{! contact}" var="c"> 
+                    First Name {! c.FirstName } 
+                    Last Name {! c.LastName } 
+                    <br/>
+            </apex:repeat>
+         </apex:tab>
+     </apex:tabPanel>
+    
+</apex:page>

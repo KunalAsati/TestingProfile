@@ -1,0 +1,51 @@
+<template>
+    <lightning-card title="Flight Data" class="slds-m-around_large" >
+        <div class="slds-grid slds-m-around_large">
+            <div class="slds-col slds-m-around_small">
+                <lightning-combobox name="flightNumber" label="Flight Number" value={flightNumber} placeholder="Select Flight Number" options={flightNumberOptions} onchange={handleFlightNumberChange}></lightning-combobox>
+            </div>
+            <div class="slds-col slds-m-around_small">
+                <lightning-combobox name="crewMemberName" label="Crew Member Name" value={crewMemberName} placeholder="Select Crew Member Name" options={crewMemberNameOptions} onchange={handleCrewMemberNameChange}></lightning-combobox>
+            </div>
+
+            <div class="slds-col slds-m-around_medium slds-p-top_medium">
+                <lightning-button label="Search" onclick={handleSearch} variant="brand"></lightning-button>
+            </div>
+            <div class="slds-col slds-m-around_small">
+            </div>
+        </div>
+
+        <div class="slds-m-around_large" if:true={passengerData}>
+            <h2 class="slds-m-around_small" style="font-size: large;">Passenger Details:</h2>
+            <lightning-datatable 
+                key-field="Id"
+                data={passengerData}
+                columns={passengerColumns}    
+                onrowselection={handleRowSelection}>
+            </lightning-datatable>
+        </div>
+
+        <div class="slds-m-around_large" if:true={flightData}>
+            <h2 class="slds-m-around_small" style="font-size: large;">Flight Details:</h2>
+            <lightning-datatable 
+                key-field="Id"
+                data={flightData}
+                columns={flightColumns}     
+                onrowselection={handleRowSelection}>
+            </lightning-datatable>
+        </div>
+
+        <div class="slds-m-around_large" if:true={crewMemberData}>
+            <h2 class="slds-m-around_small" style="font-size: large;">Crew Members Details:</h2>
+            <lightning-datatable 
+                key-field="Id"
+                data={crewMemberData}
+                columns={crewColumns}     
+                onrowselection={handleRowSelection}>
+            </lightning-datatable>
+        </div>
+    </lightning-card>
+
+
+
+</template>

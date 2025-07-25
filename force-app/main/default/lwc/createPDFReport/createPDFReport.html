@@ -1,0 +1,18 @@
+<template>
+    <lightning-card class="slds-p-around_small">
+        <div class="slds-grid slds-wrap slds-gutters">
+            <div class="slds-col slds-size_1-of-1">
+                <div class="slds-m-around_medium" >
+                    
+                    <lightning-input type="file" accept='.csv' label="Choose CSV File" onchange={handleUpload} class="upload-button"></lightning-input>
+                        <template if:true={isLoading}>
+                        <div class="slds-m-top_medium">
+                            <lightning-spinner alternative-text="Processing..." size="medium"></lightning-spinner>
+                        </div>
+                        </template>
+                      
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+</template>

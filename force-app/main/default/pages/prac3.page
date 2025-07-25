@@ -1,0 +1,24 @@
+<apex:page >
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations</h1>
+  This is your new Page: practiceform
+  <!-- End Default Content REMOVE THIS -->
+
+ 
+  <apex:form >
+  <apex:pageBlock title="Block2">
+  <h1>Please fill the form</h1><br/><br/>
+  <h1>Enter your name</h1>
+  <apex:inputtext id="name"/><br/><br/>
+    <h1>Enter your password</h1>
+  <apex:inputSecret id="password"/><br/><br/>
+  are you working with infosys?:<apex:inputCheckbox id="checkbox"/><br/><br/>
+    <h1>Enter your coverletter</h1>
+  <apex:inputtextarea id="Coverletter"/><br/><br/>
+  <apex:pageBlockButtons location="top"><apex:commandButton value="save"/><apex:commandButton value="cancel"/></apex:pageBlockButtons>
+   </apex:pageBlock> 
+  </apex:form>
+
+ 
+  
+</apex:page>

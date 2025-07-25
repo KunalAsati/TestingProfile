@@ -1,0 +1,26 @@
+<apex:page showHeader="false" standardController="Account">
+
+    <style>
+    .activeTab
+    {
+        background-color:Blue;
+        color:white;
+    }
+    .inactiveTab
+    {
+        background-color:Red;
+        color:Green;
+    }
+    </style>
+
+     <apex:tabPanel switchType="client">
+         <apex:tab label="Accounts" name="Home1" id="tabOne"  > Welcome to Accounts
+            <apex:relatedList subject="{! Account}" list="Account"/>
+         </apex:tab>
+         
+         <apex:tab label="Contacts" name="students1" id="tabtwo"> Welcome to Contacts
+            <apex:relatedList subject="{! Account}" list="Contact"/>
+         </apex:tab>
+     </apex:tabPanel>
+    
+</apex:page>

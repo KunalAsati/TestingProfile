@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Origin__c</fullName>
+    <label>Origin</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ahmedabad - AMD</fullName>
+                <default>false</default>
+                <label>Ahmedabad - AMD</label>
+            </value>
+            <value>
+                <fullName>Bengaluru - BLR</fullName>
+                <default>false</default>
+                <label>Bengaluru - BLR</label>
+            </value>
+            <value>
+                <fullName>Bhopal - BHO</fullName>
+                <default>false</default>
+                <label>Bhopal - BHO</label>
+            </value>
+            <value>
+                <fullName>Delhi - DEL</fullName>
+                <default>false</default>
+                <label>Delhi - DEL</label>
+            </value>
+            <value>
+                <fullName>Goa - GOI</fullName>
+                <default>false</default>
+                <label>Goa - GOI</label>
+            </value>
+            <value>
+                <fullName>Hyderabad - HYD</fullName>
+                <default>false</default>
+                <label>Hyderabad - HYD</label>
+            </value>
+            <value>
+                <fullName>Kolkata - CCU</fullName>
+                <default>false</default>
+                <label>Kolkata - CCU</label>
+            </value>
+            <value>
+                <fullName>Mumbai - BOM</fullName>
+                <default>false</default>
+                <label>Mumbai - BOM</label>
+            </value>
+            <value>
+                <fullName>Nagpur - NAG</fullName>
+                <default>false</default>
+                <label>Nagpur - NAG</label>
+            </value>
+            <value>
+                <fullName>Pune - PNQ</fullName>
+                <default>false</default>
+                <label>Pune - PNQ</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

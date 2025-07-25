@@ -1,0 +1,19 @@
+<apex:page standardController="Account">
+  <apex:form >
+  <apex:pageBlock title="Accountinfo">
+  <apex:pageblockSection title="Account information" collapsible="false">
+  <apex:inputField value="{!Account.Name}"/>
+    <apex:inputField value="{!Account.Type}"/>
+      <apex:inputField value="{!Account.Rating}"/>
+  </apex:pageblockSection>
+   <apex:pageblockSection title="Additional information" collapsible="false">
+  <apex:inputField value="{!Account.CustomerPriority__c}"/>
+    <apex:inputField value="{!Account.SLAExpirationDate__c}"/>
+      
+  </apex:pageblockSection>
+  <apex:pageBlockButtons >
+  <apex:commandButton value="save" action="{!save}"/>
+  </apex:pageBlockButtons>
+  </apex:pageBlock>
+  </apex:form>
+</apex:page>

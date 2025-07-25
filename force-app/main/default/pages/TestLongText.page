@@ -1,0 +1,13 @@
+<apex:page controller="TextDisplayController" renderAs="pdf">
+    <h1 style="font-size:16px;">PDF Long Word Wrapping Test</h1>
+    <p style="width: 500pt; 
+                               height:200pt;
+                border: 1px solid #000; 
+                padding: 10px; 
+                font-family: Courier; 
+                font-size: 12px; overflow-wrap: break-word;
+                word-wrap: break-word;
+                white-space: pre-wrap;" >
+              {!yourText}
+    </p>
+</apex:page>
