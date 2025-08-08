@@ -2,6 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>QEM_OOX__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
     <label>QEM_OOX</label>
     <referenceTo>QEM_OOX__c</referenceTo>
     <relationshipLabel>Actions</relationshipLabel>
