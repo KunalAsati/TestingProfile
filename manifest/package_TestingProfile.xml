@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>*</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>A_Testing_Data__c.Industry_aggregation_NZSIOC__c</members>
+		<members>A_Testing_Data__c.Industry_code_ANZSIC06__c</members>
+        <name>CustomField</name>
+	</types>
+    <types>
+		<members>*</members>
+		<name>Profile</name>
+	</types>
+	<version>60.0</version>
+</Package>

@@ -2,6 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>QEM_Quality_Event__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
     <label>QEM_Quality_Event</label>
     <referenceTo>QEM_Deviation__c</referenceTo>
     <relationshipLabel>Actions</relationshipLabel>
